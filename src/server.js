@@ -23,7 +23,7 @@ server.get('/', (req, res, next) => {
   res.send(html)
 })
 
-server.use(express.static('public'))
+server.use('/public', express.static('public'))
 
 const port = process.env.PORT || 3000
 
